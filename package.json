@@ -1,6 +1,6 @@
 {
   "name": "n8n-nodes-lavatop",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "LavaTop nodes for n8n",
   "keywords": [
     "n8n-community-node-package",
@@ -40,7 +40,7 @@
   "n8n": {
     "n8nNodesApiVersion": 1,
     "credentials": [
-      "dist/credentials/LavatopApi.credentials.js"
+      "dist/credentials/LavaTopApi.credentials.js"
     ],
     "nodes": [
       "dist/nodes/LavaTop/LavaTop.node.js"

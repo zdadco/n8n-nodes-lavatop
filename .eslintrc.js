@@ -50,7 +50,10 @@ module.exports = {
 				'n8n-nodes-base/node-param-options-type-unsorted-items': 'off',
 				'n8n-nodes-base/node-param-multi-options-type-unsorted-items': 'off',
 				'n8n-nodes-base/node-param-description-boolean-without-whether': 'off',
-				'n8n-nodes-base/node-param-display-name-wrong-for-dynamic-options': 'off'
+				'n8n-nodes-base/node-param-display-name-wrong-for-dynamic-options': 'off',
+				'n8n-nodes-base/node-param-default-wrong-for-options': 'off',
+				'n8n-nodes-base/node-param-description-missing-from-dynamic-options': 'off',
+				'n8n-nodes-base/node-filename-against-convention': 'off',
 			},
 		},
 	],
