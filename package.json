@@ -1,19 +1,23 @@
 {
-  "name": "n8n-nodes-<...>",
-  "version": "0.1.0",
-  "description": "",
+  "name": "n8n-nodes-lavatop",
+  "version": "1.0.0",
+  "description": "LavaTop nodes for n8n",
   "keywords": [
-    "n8n-community-node-package"
+    "n8n-community-node-package",
+    "n8n",
+    "lavatop",
+    "payment"
   ],
   "license": "MIT",
-  "homepage": "",
+  "homepage": "https://github.com/zdadco/n8n-nodes-lavatop.git",
   "author": {
-    "name": "",
-    "email": ""
+    "name": "Ryabov.Yaroslav",
+    "email": "ryabovyaa@gmail.com",
+    "url": "https://github.com/zdadco"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/<...>/n8n-nodes-<...>.git"
+    "url": "https://github.com/zdadco/n8n-nodes-lavatop.git"
   },
   "engines": {
     "node": ">=18.10",
@@ -36,12 +40,10 @@
   "n8n": {
     "n8nNodesApiVersion": 1,
     "credentials": [
-      "dist/credentials/ExampleCredentialsApi.credentials.js",
-      "dist/credentials/HttpBinApi.credentials.js"
+      "dist/credentials/LavatopApi.credentials.js"
     ],
     "nodes": [
-      "dist/nodes/ExampleNode/ExampleNode.node.js",
-      "dist/nodes/HttpBin/HttpBin.node.js"
+      "dist/nodes/LavaTop/LavaTop.node.js"
     ]
   },
   "devDependencies": {

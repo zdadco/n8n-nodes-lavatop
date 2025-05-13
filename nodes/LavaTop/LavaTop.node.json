@@ -1,0 +1,21 @@
+{
+	"node": "n8n-nodes-base.lavatop",
+	"nodeVersion": "1.0.0",
+	"codexVersion": "1.0.0",
+	"categories": ["Payments"],
+	"resources": {
+		"credentialDocumentation": [
+			{
+				"url": "https://gate.lava.top/docs"
+			}
+		],
+		"primaryDocumentation": [
+			{
+				"url": "https://gate.lava.top/docs"
+			}
+		],
+		"generic": [
+
+		]
+	}
+}
