@@ -13,8 +13,9 @@ export class LavaTopApi implements ICredentialType {
 
 	properties: INodeProperties[] = [
 		{
-			displayName: 'X API key',
+			displayName: 'API key',
 			name: 'apiKey',
+			description: 'Lavatop X-Api-Key header value',
 			type: 'string',
 			typeOptions: { password: true },
 			default: '',
@@ -23,7 +24,6 @@ export class LavaTopApi implements ICredentialType {
 			displayName: 'Base Url',
 			name: 'baseUrl',
 			type: 'hidden',
-			typeOptions: { password: true },
 			default: 'https://gate.lava.top/api',
 		}
 	];

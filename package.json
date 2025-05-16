@@ -1,6 +1,6 @@
 {
   "name": "n8n-nodes-lavatop",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "LavaTop nodes for n8n",
   "keywords": [
     "n8n-community-node-package",

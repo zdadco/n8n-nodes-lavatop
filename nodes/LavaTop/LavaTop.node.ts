@@ -875,7 +875,6 @@ export class LavaTop implements INodeType {
 	};
 
 	async execute(this: IExecuteFunctions): Promise<INodeExecutionData[][]> {
-		this.logger.info("Execute node")
 		return await router.call(this);
 	}
 }

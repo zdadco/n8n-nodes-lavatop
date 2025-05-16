@@ -45,10 +45,6 @@ export async function makeRequest(
 		options.qs = qs;
 	}
 
-	this.logger.info(`Request: ${options.method} | ${options.uri}`)
-	this.logger.info(`Query: ${JSON.stringify(options.qs)}`)
-	this.logger.info(`Body: ${JSON.stringify(options.body)}`)
-
 	try {
 		return await this.helpers.request(options);
 	} catch (error) {

@@ -11,7 +11,6 @@ import {DonateOperations} from "../donate";
 import {DONATE, INVOICE, PRODUCT, REPORT, SUBSCRIPTION} from "./constants";
 
 export async function router(this: IExecuteFunctions) {
-	this.logger.info("Execute router")
 	const returnData: INodeExecutionData[] = [];
 
 	const items = this.getInputData();
@@ -20,7 +19,6 @@ export async function router(this: IExecuteFunctions) {
 	const operation = this.getNodeParameter('operation', 0) as string;
 
 	let execute;
-	this.logger.info(`Find ${resource} operations`)
 	switch (resource) {
 		case PRODUCT:
 			execute = ProductOperations[operation as ProductOperation];
@@ -43,7 +41,7 @@ export async function router(this: IExecuteFunctions) {
 
 	for (let i = 0; i < items.length; i++) {
 		try {
-			this.logger.info(`Execute ${resource}:${operation}`)
+			this.logger.debug(`Execute ${resource}:${operation}`)
 			const responseData = await execute.call(this, i);
 			const executionData = this.helpers.constructExecutionMetaData(
 				this.helpers.returnJsonArray(responseData as IDataObject[]),

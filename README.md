@@ -56,6 +56,10 @@ n8n version - 1.86.1
 
 ## Version history
 
+### 1.0.2
+- Refactoring logs
+- Change credentials 'apiKey' display name
+
 ### 1.0.0
 - Basic operations for invoices, products, and subscriptions
 - Support for all LavaTop payment methods
